@@ -1,0 +1,58 @@
+<html lang="en-US" dir="ltr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ITE 18 - Activity 1.1</title>
+	<style>
+		/* Style for the instructions text */
+		.instructions {
+			position: fixed; /* Ensure it's fixed to the viewport */
+			top: 10px;
+			left: 50%;
+			transform: translateX(-50%);
+			font-family: Arial, sans-serif;
+			font-size: 18px;
+			color: #ffffff;
+			background: rgba(0, 0, 0, 0.7);
+			padding: 10px 20px;
+			border-radius: 10px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+			z-index: 10; /* Stay above the canvas */
+			text-align: center;
+		}
+
+		body {
+			margin: 0;
+			overflow: hidden;
+			background-color: #000; /* Black background for contrast */
+		}
+
+		canvas.webgl {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1; /* Ensure canvas is below the text */
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Instructions text -->
+	<div class="instructions">
+		Move your mouse to control the spotlight and light up the surface!
+	</div>
+
+	<!-- WebGL Canvas -->
+	<canvas class="webgl"></canvas>
+
+	<!-- Importing JS files -->
+	<script src="./three.min.js"></script>
+	<script src="./script.js"></script>
+</body>
+
+</html>
