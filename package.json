@@ -1,16 +1,32 @@
 {
-  "name": "ITE-18 Activity 1.1-1.2",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build"
-  },
-  "devDependencies": {
+  "name": "toyosaki_ite18",
+  "version": "1.0.0",
+  "description": "Naur",
+  "main": "vite.config.js",
+  "dependencies": {
+    "esbuild": "^0.18.20",
+    "nanoid": "^3.3.7",
+    "picocolors": "^1.1.1",
+    "postcss": "^8.4.49",
+    "rollup": "^3.29.5",
+    "source-map-js": "^1.2.1",
+    "three": "^0.148.0",
+    "toyosaki_ite18": "file:",
     "vite": "^4.5.5"
   },
-  "dependencies": {
-    "three": "^0.148.0"
-  }
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TOYOSAKI_ITE18"
+  },
+  "keywords": [
+    "ehem"
+  ],
+  "author": "hiro",
+  "license": "ISC"
 }
